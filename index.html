@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--
+	It's better to use VS Code than Github's inline editor!
+
+	Also, no AI was used. HTML was written by hand
+	-->
 	<title>Shortcut Hub</title>
 	<link rel="icon" type="image/x-icon" href="/downloads/favicon.png">
 	<style>
+		body {
+			background-image: linear-gradient(to bottom, grey, black);
+          	margin: 0;
+          
+		}
+      
+      	header {
+          background: rgb(0,3,110);
+          padding: 15px;
+          box-shadow: 2px 2px 2px;
+          position: sticky;
+          top: 0;
+  			z-index: 1000;
+      	}
+      
+      	header h1 {
+          display: inline;
+      	}
+      
+        #header-icon {
+			height: 50px;
+        }
+      
 		a:link {
 		background-color: green;
-		color: gray;
+		color: white;
 		padding: 20px 30px;
 		text-decoration: none;
 		display: inline-block;
-		margin-left: 20%; /* Nudges it between center and right */
+		margin: 10px; 
+        border-radius: 4px;
+        font-family: arial;
     		}
 
 		a:hover {
@@ -18,12 +48,20 @@
 		}
 </style>
 </head>
-<body style="background-color:SteelBlue;">
+<body>
+  <header>
+    <!-- Probably want to change the repo name soon-->
+    <img src="https://gadget-studios.github.io/shortcut-hub.github.io/shortcut.png" id="header-icon">
 	<h1 style="color:white; text-align: center; font-family: arial;">Shortcut Hub</h1>
-	<br>
+    
+	</header>
 	<h2 style="color:white; text-align: center; font-family: arial;">Here are some links for you to use :]</h2>
 	<p style="color:white; text-align: center; font-family: arial;">Have a great day!</p>
 	<div class="link-block">
+      	<!--This turns purple for some very odd reason ...  -->
+		<a href="https://stenoip.com/oodles" target="_blank">Oodles Metasearch</a>
+	</div>
+  	<div class="link-block">
 		<a href="https://mail.google.com" target="_blank">Gmail</a>
 	</div>
 	<div class="link-block">
@@ -56,5 +94,9 @@
     <div class="link-block">
         <a href="https://stenoip.github.io" target="_blank">Stenoip Konnect</a>
     </div>
+	<script>
+		// Will display Weather and Temperature soon ...
+		
+	</script>
 </body>
 </html>
